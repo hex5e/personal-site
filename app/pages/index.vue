@@ -81,6 +81,14 @@
         >
           github
         </a>
+        <a
+          class="navLink"
+          href="https://x.com/hex5e"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          twitter
+        </a>
         <NuxtLink class="navLink" to="/blog">blog</NuxtLink>
       </nav>
     </div>
