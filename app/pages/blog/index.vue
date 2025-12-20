@@ -3,7 +3,7 @@
     <div class="content">
       <h1 class="title">blog</h1>
       <ul class="list">
-        <li><NuxtLink class="link" to="/blog/blog-post-1">blog-post-1</NuxtLink></li>
+        <li><NuxtLink class="link" to="/blog/yet-another-anki-appreciation-post">Yet Another Anki Appreciation Post</NuxtLink></li>
       </ul>
     </div>
   </main>
