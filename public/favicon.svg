@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- Background -->
+  <rect x="0" y="0" width="256" height="256" fill="#6f6f6f" />
+
+  <!-- Three chevrons - all same weight -->
+  <!-- Top chevron -->
+  <path
+    d="M56 72 L128 24 L200 72"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="16"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+    stroke-miterlimit="10"
+  />
+
+  <!-- Middle chevron -->
+  <path
+    d="M56 136 L128 88 L200 136"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="16"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+    stroke-miterlimit="10"
+  />
+
+  <!-- Bottom chevron -->
+  <path
+    d="M56 200 L128 152 L200 200"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="16"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+    stroke-miterlimit="10"
+  />
+</svg>
