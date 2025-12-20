@@ -65,7 +65,14 @@
       </h1>
 
       <nav class="nav" aria-label="Primary">
-        <NuxtLink class="navLink" to="/discord">discord</NuxtLink>
+        <a
+          class="navLink"
+          href="https://discord.com/users/hex5e"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          discord
+        </a>
         <a
           class="navLink"
           href="https://github.com/hex5e"
@@ -74,7 +81,7 @@
         >
           github
         </a>
-        <span class="navLink navLinkDisabled" aria-disabled="true">blog</span>
+        <NuxtLink class="navLink" to="/blog">blog</NuxtLink>
       </nav>
     </div>
   </main>
@@ -102,6 +109,8 @@
   width: 220px;
   height: auto;
   display: block;
+  transform: rotate(180deg);
+  transform-origin: 50% 50%;
 }
 
 .chevronOutline {
@@ -150,10 +159,6 @@
   line-height: 1.05;
   color: inherit;
   text-decoration: none;
-}
-
-.navLinkDisabled {
-  cursor: default;
 }
 
 @media (max-width: 900px) {

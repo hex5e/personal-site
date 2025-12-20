@@ -3,5 +3,5 @@
 </template>
 
 <script lang="ts" setup>
-    await navigateTo("https://discord.gg/dqJEHkaTZX", {external:true});
+    await navigateTo("https://discord.com/users/hex5e", { external: true });
 </script>
