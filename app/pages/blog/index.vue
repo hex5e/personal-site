@@ -1,6 +1,10 @@
 <template>
   <main class="blog">
     <div class="content">
+      <Breadcrumbs :crumbs="[
+        { label: 'home', path: '/' },
+        { label: 'blog', path: '/blog' }
+      ]" />
       <h1 class="title">blog</h1>
       <ul class="list">
         <li><NuxtLink class="link" to="/blog/yet-another-anki-appreciation-post">Yet Another Anki Appreciation Post</NuxtLink></li>
@@ -24,7 +28,7 @@
 }
 
 .title {
-  margin: 0 0 40px 0;
+  margin: 24px 0 40px 0;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
   font-weight: 300;

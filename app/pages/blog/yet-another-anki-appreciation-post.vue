@@ -1,5 +1,12 @@
 <template>
-  <main>
+  <main class="post">
+    <div class="content">
+      <Breadcrumbs :crumbs="[
+        { label: 'home', path: '/' },
+        { label: 'blog', path: '/blog' },
+        { label: 'Yet Another Anki Appreciation Post', path: '/blog/yet-another-anki-appreciation-post' }
+      ]" />
+    </div>
     <article>
       <h1>Yet Another Anki Appreciation Post</h1>
 
@@ -55,3 +62,90 @@ These are the qualities of a good flashcard:
     </article>
   </main>
 </template>
+
+<style scoped>
+.post {
+  --bg: #6e6e6e;
+  --fg: #f4f4f4;
+
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.content {
+  padding: 70px 40px 0 40px;
+}
+
+article {
+  max-width: 800px;
+  padding: 40px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+article h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 40px 0;
+  line-height: 1.1;
+}
+
+article h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 48px 0 24px 0;
+}
+
+article p {
+  margin: 0 0 24px 0;
+}
+
+article a {
+  color: inherit;
+}
+
+article ol,
+article ul {
+  margin: 0 0 24px 0;
+  padding-left: 24px;
+}
+
+article li {
+  margin-bottom: 8px;
+}
+
+article pre {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  overflow-x: auto;
+  border-radius: 4px;
+  margin: 0 0 24px 0;
+}
+
+article code {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .content {
+    padding: 24px 24px 0 24px;
+  }
+
+  article {
+    padding: 24px;
+  }
+
+  article h1 {
+    font-size: 36px;
+  }
+
+  article h2 {
+    font-size: 24px;
+  }
+}
+</style>
